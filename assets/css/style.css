@@ -12,15 +12,43 @@
   font-style: normal;
 }
   */
+
+  /*CSS Variables*/
+:root {
+  --primary-font: "inter", sans-serif;
+  --secondary-font: "maconda", cursive;
+  --primary-color: #416a8e; /*blue*/
+  --secondary-color: #aa9581; /*brown*/
+  --highlight-color: 416a8e; /*blue*/
+  --highlight-color-light: 7a9fc2; /*light blue*/
+}
+
+/* Main CSS */
+
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    primary-color: var(--primary-color);
+}
 p {
-    font-family: "Inter", sans-serif;
-    color: white;
+    border: 2px solid var{(--primary-color)}
+
 }
 
-h1 {
-    font-family: "Macondo", cursive;
-    color: white;
+.sub-heading-color {
+    color: var(--highlight-color);
 }
 
-body {background-color: black;
+/*Grid visualisation testing*/
+.container, .row {
+    border: 2px solid black
+}
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
